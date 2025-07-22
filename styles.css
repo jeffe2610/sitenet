@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://assets.onecompiler.app/42y25dh69/42y4r4ums/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.titulo {
+  background-color: #173763;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.titulo img {
+  width: 100px;
+  height: auto;
+}
+
+.pesquisa {
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.pesquisa input {
+  padding: 5px;
+}
+
+.navegador {
+  background-color: #486392;
+}
+
+.navegador menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+}
+
+.navegador li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+.navegador a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.area_formulario {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.formulario {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#botao {
+  padding: 10px;
+  border: none;
+  background-color: #173763;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.prods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.prods li {
+  width: 100%;
+  max-width: 300px;
+  background-color: #788ec1;
+  border: 5px solid #173763;
+  border-bottom-right-radius: 15%;
+  border-top-left-radius: 15%;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#comprar {
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  background-color: #173763;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.price span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pesquisa {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .navegador menu {
+    flex-direction: column;
+  }
+
+  .navegador li {
+    margin-bottom: 10px;
+  }
+}
